@@ -35,28 +35,6 @@ opting for a chassis-mount fused socket.
 
 Filament used: KVP ABS Stellar Black (base), KVP ABS Voron Red (accent)
 
-##### Notes on the Noctua colorscheme
-
-Finding the right filament matching the chosen colorscheme was a bit of a
-challenge. Noctua's classic colorscheme is Pantone PQ-483C (brown) and Pantone
-PQ-2309C (beige) as found in [this Reddit thread][NoctuaColorsRedditThread].
-Matching the beige is especially tough since most filament ranges' beige/skin
-colors are more redish. People in the US have it easy as the high quality
-[Paramount ABS skin (fair complexion)][ParamountABSBeige] filament is very close
-to the Noctua tone (as [discovered][AccurazineV22] by Accurazine).
-Unfortunately, this filament is not available in the EU requiring me to hunt for
-new filament. I then stumbled upon the [Ampertec ABS skin][AmpertecABSSkin]
-filament only sold in Germany and it matches Noctua's beige pretty closely as
-well.
-
-The brown is easier to match. Here I followed Accurazine's lead: ABS+ brown from
-eSUN.
-
-[NoctuaColorsRedditThread]: https://www.reddit.com/r/pcmods/comments/jp15zy/exact_noctua_fan_colors/
-[ParamountABSBeige]: https://www.paramount-3d.com/product-page/abs-pantone-468c-skin-fair-complexion-1-75mm-1kg-filament-lirl1015468a
-[AccurazineV22]: https://www.reddit.com/r/3Dprinting/comments/g9t2lj/noctuathemed_printed_parts_for_my_voron_22_build/
-[AmpertecABSSkin]: https://www.filamentpreis.de/3dabs1000skn1am.html
-
 #### Mods
 
 - [rear skirt IEC inlet](https://github.com/VoronDesign/VoronUsers/pull/271)
@@ -103,6 +81,28 @@ cooling using a 5015 blower fan optimized ducts.
 Filament used: Ampertec ABS skin (base), eSUN ABS+ brown (accent)
 
 [NevermoreMicroRepository]: https://github.com/nevermore3d/Nevermore_Micro
+
+##### Notes on the Noctua colorscheme
+
+Finding the right filament matching the chosen colorscheme was a bit of a
+challenge. Noctua's classic colorscheme is Pantone PQ-483C (brown) and Pantone
+PQ-2309C (beige) as found in [this Reddit thread][NoctuaColorsRedditThread].
+Matching the beige is especially tough since most filament ranges' beige/skin
+colors are more redish. People in the US have it easy as the high quality
+[Paramount ABS skin (fair complexion)][ParamountABSBeige] filament is very close
+to the Noctua tone (as [discovered][AccurazineV22] by Accurazine).
+Unfortunately, this filament is not available in the EU requiring me to hunt for
+new filament. I then stumbled upon the [Ampertec ABS skin][AmpertecABSSkin]
+filament only sold in Germany and it matches Noctua's beige pretty closely as
+well.
+
+The brown is easier to match. Here I followed Accurazine's lead: ABS+ brown from
+eSUN.
+
+[NoctuaColorsRedditThread]: https://www.reddit.com/r/pcmods/comments/jp15zy/exact_noctua_fan_colors/
+[ParamountABSBeige]: https://www.paramount-3d.com/product-page/abs-pantone-468c-skin-fair-complexion-1-75mm-1kg-filament-lirl1015468a
+[AccurazineV22]: https://www.reddit.com/r/3Dprinting/comments/g9t2lj/noctuathemed_printed_parts_for_my_voron_22_build/
+[AmpertecABSSkin]: https://www.filamentpreis.de/3dabs1000skn1am.html
 
 #### Mods
 
