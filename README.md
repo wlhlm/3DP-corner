@@ -57,7 +57,7 @@ including autmatic bed probing, a purge bucket, [Z offset calibration][ZCalibrat
 One of the differenciating features of this build is the use of the classical
 [Noctua][NoctuaHomepage] color scheme.
 
-Serial number: V2.xxxx
+Serial number: V2.2828
 
 ![V2.xxx showcase](assets/v2-showcase.jpg)
 
