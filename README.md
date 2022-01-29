@@ -2,7 +2,7 @@
 ------------------
 
 This repository contains many of my 3D printing-related things including slicer
-and firmware configuration. Unless explicitely stated otherwise, the contents of
+and firmware configuration. Unless explicitly stated otherwise, the contents of
 this repository are licensed under the terms of the GPLv3.
 
 ## Printers
@@ -54,7 +54,7 @@ about 300mmx300mmx260mm (in fact, you can put whole V0 inside of the V2). The
 larger size affords packing the machine with more quality of life features
 including autmatic bed probing, a purge bucket, [Z offset calibration][ZCalibration], and [thermal expansion compensation][ThermalComp] 
 
-One of the differenciating features of this build is the use of the classical
+One of the differentiating features of this build is the use of the classical
 [Noctua][NoctuaHomepage] color scheme.
 
 Serial number: V2.2828

@@ -11,12 +11,12 @@ machine is the include in `klipper.cfg`.
 Klipper upstream development is conservative and has become a bit bottlenecked
 over the course of 2021 which has lead to the rise of a number of modules being
 maintained externally. To incorporate these modules into my printer setups and
-to simplify maintainance across multiple printers I have decided to maintain [my
-own Klipper branch][WlhlmKlipperBranch]. Besides said modules this branch may
-also include some of my own changes such as new functionality I'm developing or
-miscellaneous fixes. All this means that just copying my config into your own
-setup will mostly likely not work straight away, so it's probably better to only
-copy the actual snippets that you are interested in. 
+to simplify firmware management across multiple printers I have decided to start
+maintaining [my own Klipper branch][WlhlmKlipperBranch]. Besides said modules
+this branch may also include some of my own changes such as new functionality
+I'm developing or miscellaneous fixes. All this means that just copying my
+config into your own setup will mostly likely not work straight away, so it's
+probably better to only copy the actual snippets that you are interested in.
 
 [KlipperHomepage]: https://www.klipper3d.org/
 [WlhlmKlipperBranch]: https://github.com/wlhlm/klipper/tree/wlhlm-main
