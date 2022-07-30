@@ -34,7 +34,7 @@ whistles and thus doesn't really require and rely on fancy Klipper modules.
 
 The V2 configuration relies on a number of extra Klipper modules:
 
-- [Frame expansion compensation](https://github.com/alchemyEngine/klipper_frame_expansion_comp)
+- [Frame expansion compensation](https://github.com/Klipper3d/klipper/pull/4157)
 - [Z calibration](https://github.com/protoloft/klipper_z_calibration)
 - [Dockable probe](https://github.com/Klipper3d/klipper/pull/4328)
 
@@ -47,3 +47,12 @@ Here are a few Klipper configurations from which I've drawn major inspiration:
 - [@retsamedoc's V2 config](https://github.com/retsamedoc/VoronV2_klipper)
 - [@kmobs' V2 config](https://github.com/kmobs/3dprinting/tree/kmobs/klipper_config)
 - [@rpanfili's V2 config](https://github.com/rpanfili/voron-ht)
+
+### Annex K3 R1 beta
+
+The K3 configuration relies, like the V2 config, on a number of extra Klipper
+modules. While an additional Z endstop has been installed, it is currently
+unused instead relying on the Probe for Z.
+
+- [Frame expansion compensation](https://github.com/Klipper3d/klipper/pull/4157)
+- [Dockable probe](https://github.com/Klipper3d/klipper/pull/4328)

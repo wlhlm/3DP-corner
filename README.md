@@ -7,7 +7,7 @@ this repository are licensed under the terms of the GPLv3.
 
 ## Printers
 
-Here is a list my 3D printers:
+Here is a list of my DIY 3D printer builds:
 
 ### Voron V0.0
 
@@ -52,25 +52,27 @@ After completing the V0 build I began working on another printer in the Voron
 lineup: the V2. This is a significantly bigger machine with a print volume of
 about 300mmx300mmx260mm (in fact, you can put whole V0 inside of the V2). The
 larger size affords packing the machine with more quality of life features
-including autmatic bed probing, a purge bucket, [Z offset calibration][ZCalibration], and [thermal expansion compensation][ThermalComp] 
+including automatic bed probing, a purge bucket,
+[Z offset calibration][ZCalibration],
+and [thermal expansion compensation][ThermalComp].
 
 One of the differentiating features of this build is the use of the classical
 [Noctua][NoctuaHomepage] color scheme.
 
 Serial number: V2.2828
 
-![V2.xxx showcase](assets/v2-showcase.jpg)
+![V2.2828 showcase](assets/v2-showcase.jpg)
 
 [ZCalibration]: https://github.com/protoloft/klipper_z_calibration
-[ThermalComp]: https://github.com/alchemyEngine/klipper_frame_expansion_comp
+[ThermalComp]: https://github.com/Klipper3d/klipper/pull/4157
 [NoctuaHomepage]: https://noctua.at/
 
 #### Notable components
 
-The V2 deviates from the stock recommended parts in more places than the V0: The
-stepper motors are provided from the LDO V2 kit. On top have I installed a BTT
-Octopus controller board and relays for separately controller supply power to
-the bed and controller board from the Raspberry Pi. A custom-sized heater
+My V2 build deviates from the stock recommended parts in more places than the
+V0: The stepper motors are provided from the LDO V2 kit. On top have I installed
+a BTT Octopus controller board and relays for separately controller supply power
+to the bed and controller board from the Raspberry Pi. A custom-sized heater
 sourced from fermiolabs is used here as well. Notably, the exhaust filter is not
 populated rather the hole is blanked off relying on the
 [Nevermore Micro][NevermoreMicroRepository] recirculating filter for air
@@ -124,3 +126,59 @@ eSUN.
 - parts from other Voron printers:
   - Trident display and DIN rail mounts
   - V2.2 panel and Wago frame mounting
+
+### Annex K3 R1 beta
+
+I'm always on the lookout for interesting printer designs/kinematics and my eyes
+fell on the cross gantry concept (most notably used in the Ultimaker 3D
+printers) instead of yet another CoreXY build. The drawbacks of the design, like
+higher costs due to more complex electronics and more motion components and less
+space efficiency, are countered by the potential for reaching higher speeds.
+This space hasn't been explored as much as CoreXY. The most advanced designs
+seem to be released by Annex Engineering. My choice fell on the Annex K3 which
+tries to increase space efficiency as much a possible as I'm used to from my
+previous builds.
+
+The K3 is a compact build (for cross gantry printers anyway) centered around a
+180x180mm Prusa Mini-style bed. The ultra lightweight gantry coupled to four
+stepper motors gives this printer ludicrous speed potential. A big drawback for
+me compared to the Vorons is the more restrictive licensing of the Annex
+designs.
+
+At the time of the build, the K3 was still in open beta having only a pseudo-CAD
+available requiring a proprietary viewer that is not available on Linux (or
+alternatively a slightly outdated version of the printer model available in
+Autodesk Viewer in a web browser). There was no manual and the fastener section
+in the BOM wasn't finalized. That being said, the build went more smoothly than
+initially thought with the help of a rough assembly order from the Annex
+Discord. The build relies more heavily on custom-made components, specifically
+the enclosure uses quite a few laser-cut/milled parts. Luckily, I was able to
+join a local group buy that helped with sourcing enclosure panels.
+
+Serial number: *there are no serial numbers for Annex printers, unfortunately.*
+
+![K3 showcase](assets/k3-showcase.jpg)
+
+#### Notable components
+
+With this build I'm trying out the NF Crazy (Slice Mosquito clone) hotend with a
+Bondtech CHT nozzle for the first time and I'm liking it so far. However, more
+notable is the use of the Double Folder Ascender extruder featuring worm gears.
+This has been on my list of things to try out for a while. The worm gears give
+the extruder interesting Pressure Advance properties. However, it is quite a bit
+harder to source than the alternative Sherpa Mini.
+
+Electronics follow the stock K3 build. It uses a frame thermistor in order to
+enable [frame expansion compensation][ZAdjust]
+
+Filament used: Prusament ASA Jet Black (base), and Prusa Orange (accent)
+
+[ZAdjust]: https://github.com/Klipper3d/klipper/pull/4157
+
+#### Mods
+
+With the K3 being still in beta and thus no released CAD, the number of
+modifications available for it was rather limited. However the stock build seems
+quite complete already making certain mods not really necessary. One mod I
+installed was the beefed up version of the Double Folded Ascender extruder
+released by StrikEagleCC.
