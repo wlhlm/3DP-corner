@@ -1,5 +1,3 @@
 firmware-config/variables.cfg
-firmware-config/moonraker.conf
-firmware-config/.moonraker.conf.bkp
-moonraker.conf*
 *.bak
+*.bkp
