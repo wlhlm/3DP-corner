@@ -1,5 +1,5 @@
 Assets
 ======
 
-This directory is the locations for various files (for example images)
-referenced in the documentation in the rest of the documentation.
+This directory contains files (such as images) referenced by the documents in
+the rest of the repository.
