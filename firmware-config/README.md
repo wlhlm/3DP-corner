@@ -47,6 +47,8 @@ Here are a few Klipper configurations from which I've drawn major inspiration:
 - [@retsamedoc's V2 config](https://github.com/retsamedoc/VoronV2_klipper)
 - [@kmobs' V2 config](https://github.com/kmobs/3dprinting/tree/kmobs/klipper_config)
 - [@rpanfili's V2 config](https://github.com/rpanfili/voron-ht)
+<!-- have to check out: https://github.com/pressla/klipper-voron2 -->
+<!-- have to check out: https://github.com/rootiest/zippy-klipper_config -->
 
 ### Annex K3 R1 beta
 
