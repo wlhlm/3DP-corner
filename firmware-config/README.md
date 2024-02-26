@@ -28,13 +28,13 @@ Printer-specific configuration notes:
 ### Voron V0.0
 
 The V0 is a pretty simple printer at its core with pretty much no bells and
-whistles and thus doesn't really require and rely on fancy Klipper modules.
+whistles and thus doesn't really require and rely on fancy out-of-tree Klipper
+modules.
 
 ### Voron V2.4
 
 The V2 configuration relies on a number of extra Klipper modules:
 
-- [Frame expansion compensation](https://github.com/Klipper3d/klipper/pull/4157)
 - [Z calibration](https://github.com/protoloft/klipper_z_calibration)
 - [Dockable probe](https://github.com/Klipper3d/klipper/pull/4328)
 
@@ -55,5 +55,35 @@ The K3 configuration relies, like the V2 config, on a number of extra Klipper
 modules. While an additional Z endstop has been installed, it is currently
 unused instead relying on the Probe for Z.
 
-- [Frame expansion compensation](https://github.com/Klipper3d/klipper/pull/4157)
 - [Dockable probe](https://github.com/Klipper3d/klipper/pull/4328)
+
+## Slicer requirements
+
+The firmware macros defined in require them to be called by the slicer at
+appropriate times. This is particularly important for the start G-Code. Certain
+macro calls (specifically for verification of preprint calibration) have to be
+done outside of `START_PRINT` due to how klipper's G-Code processing works.
+
+### Start G-Code
+
+    CHECK_PRINTER_COMPATIBILITY MAKE=... MODEL=... NAME=... NOZZLE_SIZE=... ; Make sure the printer doesn't run G-Code slice for a different printer
+    
+    G21 ; Sets G-Code units to millimeters. All the macros assume millimeters. Normally added automatically by slicer
+    
+    ; The following two are not technically required, but are good practice to include
+    G92 E0 ; reset extruder
+    M107 ; disable fan
+    
+    START_PRINT T_EXTRUDER=... T_BED=... T_CHAMBER=...
+    VERIFY_START_PRINT ; REQUIRED to be called after START_PRINT to make sure print preconditions are met
+    
+    PRINT_PRIME_LINE ; Optional; only makes sense when using no brim or skirt
+
+Some of the printers enable adaptive bed meshing. This requires `exclude_object`
+markers in the G-Code. Either use a slicer that natively support
+`exclude_object` G-Codes, or enable post processing through the
+`preprocess_cancellation` module either in moonraker or standalone.
+
+### End G-Code
+
+    END_PRINT
